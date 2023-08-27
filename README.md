@@ -1,7 +1,7 @@
-# My First Django 
+# My Tennis Club
 
-My First Django is a web application used to represent some data
-about the members of a tennis club. As the name suggests, this is
+My Tennis Club is a web application used to represent some data
+about the members of a tennis club. This is
 my first-ever Django project and it was intended for learning
 purposes only.
 
