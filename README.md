@@ -1,4 +1,4 @@
-# My Tennis Club
+# My Tennis Club 🎾
 
 My Tennis Club is a web application used to represent some data
 about the members of a tennis club. This is
