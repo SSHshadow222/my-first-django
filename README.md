@@ -30,7 +30,7 @@ https://www.python.org/downloads/)
 #### Clone The Repository
 
 ```shell
-git clone https://github.com/sshshadow222/my-first-django
+git clone https://github.com/SSHshadow222/my-first-django.git
 cd my-first-django
 ```
 
