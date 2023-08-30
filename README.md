@@ -29,7 +29,7 @@ Before you begin, ensure you have met the following requirements:
 - Python 3.7 or later is required (You can download Python from the official website:
 https://www.python.org/downloads/)
 
-#### Setting Up And Running The Server
+#### Setting Up & Running The Server
 
 1. Clone the repository
 
