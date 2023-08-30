@@ -20,62 +20,66 @@ relational database management system.
 
 ## Installation
 
-Follow these steps to set up and run the project on your local machine.
+You can follow these steps to set up and run the project on your local machine.
 
 #### Prerequisites
 
-Python 3.7 or later (You can download Python from the official website:
+Before you begin, ensure you have met the following requirements:
+
+- Python 3.7 or later is required (You can download Python from the official website:
 https://www.python.org/downloads/)
 
-#### Clone The Repository
+#### Setting Up And Running The Server
 
-```shell
-git clone https://github.com/SSHshadow222/my-first-django.git
-cd my-first-django
-```
+1. Clone the repository
 
-#### Create and Activate a Virtual Environment
+    ```shell
+    git clone https://github.com/SSHshadow222/my-first-django.git
+    cd my-first-django
+    ```
 
-###### Windows:
+2. Create and activate a virtual environment
 
-```shell
-> py -m venv .venv 
-> .venv\Scripts\activate.bat
-```
+    ###### Windows:
+    
+    ```shell
+    > py -m venv .venv 
+    > .venv\Scripts\activate.bat
+    ```
+    
+    ###### Unix-Like:
+    
+    ```shell
+    $ python -m venv .venv
+    $ source .venv/bin/activate
+    ```
 
-###### Unix Like:
+3. Install dependencies
 
-```shell
-$ python -m venv .venv
-$ source .venv/bin/activate
-```
+    ```shell
+    cd src
+    pip install -r requirements.txt
+    ```
 
-#### Install dependencies
+4. Configure the environment file
 
-```shell
-cd src
-pip install -r requirements.txt
-```
+    Create a .env file in my_tenis_club and add a secret key:
+    
+    ```env
+    SECRET_KEY=your_secret_key
+    ```
+    
+    To generate a random secret key run the following commands:
+    
+    ```python
+    $ python manage.py shell
+    
+    >>> from django.core.management.utils import get_random_secret_key
+    >>> print(get_random_secret_key())
+    ```
+    
+5. Finally, run the server
 
-#### Configure The Environment File
-
-Create a .env file in my_tenis_club and add a secret key:
-
-```env
-SECRET_KEY=your_secret_key
-```
-
-To generate a random secret key run the following commands:
-
-```python
-$ python manage.py shell
-
->>> from django.core.management.utils import get_random_secret_key
->>> print(get_random_secret_key())
-```
-
-#### Run The Server
-
-```shell
-$ python manage.py runserver
-```
+    ```shell
+    $ python manage.py runserver
+    ```
